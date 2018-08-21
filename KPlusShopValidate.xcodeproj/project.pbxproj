@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		EC16F998212BE1D1009C8284 /* KPlusShopValidate.h in Headers */ = {isa = PBXBuildFile; fileRef = EC16F996212BE1D1009C8284 /* KPlusShopValidate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC16F99F212BE1DC009C8284 /* Validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC16F99E212BE1DC009C8284 /* Validate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EC16F993212BE1D1009C8284 /* KPlusShopValidate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KPlusShopValidate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC16F996212BE1D1009C8284 /* KPlusShopValidate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPlusShopValidate.h; sourceTree = "<group>"; };
 		EC16F997212BE1D1009C8284 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC16F99E212BE1DC009C8284 /* Validate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +32,7 @@
 		EC16F989212BE1D1009C8284 = {
 			isa = PBXGroup;
 			children = (
+				EC16F99E212BE1DC009C8284 /* Validate.swift */,
 				EC16F995212BE1D1009C8284 /* KPlusShopValidate */,
 				EC16F994212BE1D1009C8284 /* Products */,
 			);
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					EC16F992212BE1D1009C8284 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC16F99F212BE1DC009C8284 /* Validate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +264,7 @@
 		EC16F99C212BE1D1009C8284 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -275,6 +281,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.thospol032.KPlusShopValidate;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,6 +290,7 @@
 		EC16F99D212BE1D1009C8284 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
